@@ -16,3 +16,5 @@ RUN apt-get update && \
     arduino-cli core update-index --config-file /etc/cli-config.yml && \
     arduino-cli core install esp8266:esp8266 --config-file /etc/cli-config.yml
 WORKDIR /build
+
+ENTRYPOINT ["/usr/bin/arduino-cli"]
