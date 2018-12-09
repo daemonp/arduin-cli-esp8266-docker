@@ -12,7 +12,7 @@ RUN apt-get update && \
       make ca-certificates && \
     apt-get auto-remove && \
     rm -rf /var/lib/apt/lists/* && \
-    arduino-cli lib install PubSubClient && \
+    arduino-cli lib install PubSubClient Unified\ Log && \
     arduino-cli core update-index --config-file /etc/cli-config.yml && \
     arduino-cli core install esp8266:esp8266 --config-file /etc/cli-config.yml
 WORKDIR /build
