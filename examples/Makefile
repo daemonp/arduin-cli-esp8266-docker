@@ -1,6 +1,6 @@
 
 DEST := $(if $(DEST),$(DEST),gate)
-BOARD := "esp8266:esp8266:generic:FlashSize=2M"
+BOARD := "esp8266:esp8266:generic:eesz=2M"
 
 
 LOCAL_C_SRCS    ?= $(wildcard *.c)
